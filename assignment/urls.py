@@ -21,4 +21,6 @@ from transaction.urls import transaction_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('transaction/', include(transaction_urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
